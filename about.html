@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>VR46 Gaming</title>
+	<link rel="shortcut icon" href="Banner\Icon\logo.png">
+	
+	<style>
+		#outer0 {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body onload="startTime()">
+
+<div id="outer0">
+	<div id="inner0"></div>
+
+		<header>
+
+				<div class="header-cover">
+
+						<div class="header-logo">
+							<img src="Banner\iconspin.png" class="iconspin">
+							<img src="Banner\logo2.png" class="logo">
+						</div>
+
+
+					<div class="header-cont">
+							<input type="text" name="Username" placeholder="Username" class="box" required>
+							<input type="password" name="Password" placeholder="Password" class="box" required>
+							<button class="login"><a href="about.html" type="button">LOGIN</a></button>
+							<button class="join"><a href="join.html">JOIN</a></button>
+
+						<div class="header-down">
+							<div>
+								Forgot&nbsp;<a href="contac.html">username</a>&nbsp;or&nbsp;<a href="contac.html">password</a>?
+							</div>
+
+							<div id="time" class="time"></div>
+							<p>(GMT+8)</p>
+
+						</div>
+
+					</div>
+
+				</div>
+		</header>
+</div>
+
+		<script>
+		function startTime() {
+		  const today = new Date();
+		  let mo = today.getMonth() + 1;
+		  let de = today.getDate();
+		  let y = today.getFullYear();
+		  let h = today.getHours();
+		  let m = today.getMinutes();
+		  let s = today.getSeconds();
+		  m = checkTime(m);
+		  s = checkTime(s);
+		  mo = checkTime(mo);
+		  de = checkTime(de);
+		  h = checkTime(h);
+		  
+		  
+		  document.getElementById('time').innerHTML =  y + "-" + mo + "-" + de + " " +  h + ":" + m + ":" + s;
+		  setTimeout(startTime, 1000);
+		}
+
+		function checkTime(i) {
+		  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		  return i;
+		}
+	</script>
+
+
+	<!-- Top Bar Content -->
+
+	<nav class="navbar">
+		<div class="navdiv">
+			<ul>
+
+				<li class="page-nav">
+					<a href="index.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\home.png"></div>
+								<div class="wor-nav">HOME</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\slot.png"></div>
+								<div class="wor-nav">SLOTS GAME</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s1.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s2.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s3.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s4.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s5.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s6.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\live.png"></div>
+								<div class="wor-nav">LIVE CASINO</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l1.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l2.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l3.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l5.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l6.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l7.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\sport.png"></div>
+								<div class="wor-nav">SPORTS</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Sport\maxbet.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="promotion.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\promotion.png"></div>
+								<div class="wor-nav">PROMOTIONS</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="about.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\about.png"></div>
+								<div class="wor-nav">ABOUT US</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="contac.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\contac.png"></div>
+								<div class="wor-nav">CONTACS US</div>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<!-- End Top Bar Content -->
+
+	<div class="about">
+		<h1>ABOUT VR46</h1>
+
+		<div class="about1">
+			<h2>1. Currency selections that are accepted by VR46 ?</h2>
+			<h6>Answer : Malaysian Ringgit (MYR)</h6>
+		</div>
+
+		<div class="about2">
+		<h2>2. About our opening hours ?</h2>
+		<h6>Answer : We are open 24 hours</h6>
+		</div>
+
+		<div class="about3">
+		<h2>3. Is my personal information secure ?</h2>
+		<h6>Answer : VR46 is developed with your personal privacy and security as our primary concern.  VR46 is regulated and will not disclose your personal information which employs the highest standards of data encryption to any third party unless required to do so by applicable laws and regulations or a court order. </h6>
+		</div>
+
+		<div class="about-all">
+		<h2>Leading A Future of Asia Online Betting</h2>
+		<h6>VR46 is Asia's most influential and favourite online gaming and entertainment brand since 2018. As a reputable online gambling site first founded in Malaysia, the group have already possessed more than 300 well trained expertise in the industry and nearly a million of players around Malaysia. Being a pioneer for the next generation of online betting, we offer our customers with Asia's top performing brands in Sportsbook, Live Casino, Online Lotteries and Slot Games. We are the official agent for major online gambling brands in Asia such as Allbet, Playtech, AG Gaming and many more.</h6>
+		</div>
+			
+		<div class="about-all">
+		<h2>VR46's Philosophy - We Share, You Win!</h2>
+		<h6>At VR46, we uphold the philosophy of “Sharing” & “Winning” as we believe they are the most essential recipes to keep our customers closer to us for a long run. By joining us, our customers enjoytons of exciting and best online casinos, online slots and sportsbook events,promos as well as loyalty rewards. Claim your bonus today!</h6>
+		</div>
+		
+		<div class="about-all">
+		<h2>Worry Free Online Betting Environment As Always</h2>
+		<h6>For your peace of mind, our first-class online betting site is designed to be user friendly, entertaining, convenient and worry-free. As a professional online betting brand in Asia, we want our customers to feel safe and looked after. We treat the privacy and confidential information of our customers in the strictest way. All data and transactions are encrypted to and from our site communication.</h6>
+		</div>
+
+		<div class="about-all">
+		<h2>24/7 Premium Customer Support</h2>
+		<h6>We strive our best to commit the top notch support across our wide range of online betting products and services to our customers via phone call, e-mail, or even social chat. Our Member Service Support Team is available 24 hours daily, 7 days a week to render any troubleshooting and assistance needed</h6>
+		</div>
+
+	</div>
+		
+<!-- Footer container -->
+
+<div class="footer-bg">
+
+	<div id="verticle-line" class="footer-line"></div>
+
+	<div id="outer10">
+		<div id="inner10"></div>
+
+	<div class="row1">
+
+		<div class="footer">
+			<div class="process">
+				<div class="top-name">FAST SETTLEMENT</div>
+				<div class="container-text">DEPOSIT</div>
+				<div class="container-text2">Average Time : 1 mins</div>
+				<div class="process-bar">
+					<div class="processd1 processd2"></div>
+				</div>
+				<div class="container-text">WITHDRAW</div>
+				<div class="container-text2">Average Time : 2 mins</div>
+				<div class="process-bar">
+					<div class="processw1 processw2"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-divider">
+				<div class="top-name2">PROVIDERS</div>
+				<img src="Banner\Footer\providers1.png" class="footer-banner">
+				<img src="Banner\Footer\providers2.png" class="footer-banner">
+				<img src="Banner\Footer\providers3.png" class="footer-banner">
+				<img src="Banner\Footer\providers4.png" class="footer-banner">
+				<img src="Banner\Footer\providers5.png" class="footer-banner">
+				<img src="Banner\Footer\providers6.png" class="footer-banner">
+				<img src="Banner\Footer\providers7.png" class="footer-banner">
+				<img src="Banner\Footer\providers8.png" class="footer-banner">
+				<div class="top-name2">LICENSES</div>
+				<img src="Banner\Footer\licenses1.png" class="footer-banner">
+				<img src="Banner\Footer\licenses2.png" class="footer-banner">
+				<img src="Banner\Footer\licenses3.png" class="footer-banner">
+				<img src="Banner\Footer\licenses4.png" class="footer-banner">
+				<img src="Banner\Footer\licenses5.png" class="footer-banner">
+				<img src="Banner\Footer\licenses6.png" class="footer-banner">
+			</div>
+		</div>
+
+	</div>
+
+		<div class="bottom-finish">
+			<div class="bottom-text">
+				<a href="about.html">About Us</a>
+				<div class="text-divider">|</div>
+				<a href="contac.html">Contacs Us</a>
+				<div class="text-divider">|</div>
+				<a href="join.html">Join Us Now</a>
+			</div>
+				<div class="copyright">Copyright VR46 © 2024. All rights reserved.</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Footer container -->
+
+</body>
+</html>

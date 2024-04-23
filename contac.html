@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>VR46 Gaming</title>
+	<link rel="shortcut icon" href="Banner\Icon\logo.png">
+
+	<style>
+		#outer {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+
+	<style>
+		#outer2 {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+
+	<style>
+		#outer0 {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body onload="startTime()">
+
+<div id="outer0">
+	<div id="inner0"></div>
+
+		<header>
+
+				<div class="header-cover">
+
+						<div class="header-logo">
+							<img src="Banner\iconspin.png" class="iconspin">
+							<img src="Banner\logo2.png" class="logo">
+						</div>
+
+
+					<div class="header-cont">
+							<input type="text" name="Username" placeholder="Username" class="box" required>
+							<input type="password" name="Password" placeholder="Password" class="box" required>
+							<button class="login"><a href="contac.html" type="button">LOGIN</a></button>
+							<button class="join"><a href="join.html">JOIN</a></button>
+
+						<div class="header-down">
+							<div>
+								Forgot&nbsp;<a href="contac.html">username</a>&nbsp;or&nbsp;<a href="contac.html">password</a>?
+							</div>
+
+							<div id="time" class="time"></div>
+							<p>(GMT+8)</p>
+
+						</div>
+
+					</div>
+
+				</div>
+		</header>
+</div>
+
+		<script>
+		function startTime() {
+		  const today = new Date();
+		  let mo = today.getMonth() + 1;
+		  let de = today.getDate();
+		  let y = today.getFullYear();
+		  let h = today.getHours();
+		  let m = today.getMinutes();
+		  let s = today.getSeconds();
+		  m = checkTime(m);
+		  s = checkTime(s);
+		  mo = checkTime(mo);
+		  de = checkTime(de);
+		  h = checkTime(h);
+		  
+		  
+		  document.getElementById('time').innerHTML =  y + "-" + mo + "-" + de + " " +  h + ":" + m + ":" + s;
+		  setTimeout(startTime, 1000);
+		}
+
+		function checkTime(i) {
+		  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		  return i;
+		}
+	</script>
+
+
+	<!-- Top Bar Content -->
+
+	<nav class="navbar">
+		<div class="navdiv">
+			<ul>
+
+				<li class="page-nav">
+					<a href="index.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\home.png"></div>
+								<div class="wor-nav">HOME</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\slot.png"></div>
+								<div class="wor-nav">SLOTS GAME</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s1.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s2.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s3.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s4.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s5.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s6.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\live.png"></div>
+								<div class="wor-nav">LIVE CASINO</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l1.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l2.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l3.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l5.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l6.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l7.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\sport.png"></div>
+								<div class="wor-nav">SPORTS</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Sport\maxbet.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="promotion.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\promotion.png"></div>
+								<div class="wor-nav">PROMOTIONS</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="about.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\about.png"></div>
+								<div class="wor-nav">ABOUT US</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="contac.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\contac.png"></div>
+								<div class="wor-nav">CONTACS US</div>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<!-- End Top Bar Content -->
+
+<div id="outer">
+	<div id="inner"></div>
+
+		<div>
+			<div class="contac-us">
+			<h2>CUSTOMER SERVICE</h2>
+			</div>
+			<div class="banner">
+				<a href="https://wa.link/eyibqu"><img src="Banner\Contac\c1.png" alt="" height="auto" width="200px"></a>
+				<a href="https://wa.link/00v1zv"><img src="Banner\Contac\c2.png" alt="" height="auto" width="200px"></a>
+				<a href="https://t.me/vr46_main"><img src="Banner\Contac\c3.png" alt="" height="auto" width="200px"></a>
+				<a href="https://t.me/vr46_mkt2"><img src="Banner\Contac\c4.png" alt="" height="auto" width="200px"></a>
+			</div>
+		</div>
+</div>
+
+
+<div id="outer2">
+	<div id="inner2"></div>
+
+		<div>
+			<div class="contac-us">
+			<h2>INFORMATION</h2>
+			</div>
+			<div class="banner">
+				<a href="https://www.whatsapp.com/channel/0029VaNlfAe8fewvmP8eCn1c"><img src="Banner\Contac\i1.png" alt="" height="auto" width="200px"></a>
+				<a href="https://t.me/vr46_bukticuci"><img src="Banner\Contac\i2.png" alt="" height="auto" width="200px"></a>
+				<a href="https://t.me/tipspecah_bot"><img src="Banner\Contac\i3.png" alt="" height="auto" width="200px"></a>
+				<a href="https://t.me/VR46Free365_bot"><img src="Banner\Contac\i4.png" alt="" height="auto" width="200px"></a>
+			</div>
+		</div>
+</div>
+		
+<!-- Footer container -->
+
+<div class="footer-bg">
+
+	<div id="verticle-line" class="footer-line"></div>
+
+	<div id="outer10">
+		<div id="inner10"></div>
+
+	<div class="row1">
+
+		<div class="footer">
+			<div class="process">
+				<div class="top-name">FAST SETTLEMENT</div>
+				<div class="container-text">DEPOSIT</div>
+				<div class="container-text2">Average Time : 1 mins</div>
+				<div class="process-bar">
+					<div class="processd1 processd2"></div>
+				</div>
+				<div class="container-text">WITHDRAW</div>
+				<div class="container-text2">Average Time : 2 mins</div>
+				<div class="process-bar">
+					<div class="processw1 processw2"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-divider">
+				<div class="top-name2">PROVIDERS</div>
+				<img src="Banner\Footer\providers1.png" class="footer-banner">
+				<img src="Banner\Footer\providers2.png" class="footer-banner">
+				<img src="Banner\Footer\providers3.png" class="footer-banner">
+				<img src="Banner\Footer\providers4.png" class="footer-banner">
+				<img src="Banner\Footer\providers5.png" class="footer-banner">
+				<img src="Banner\Footer\providers6.png" class="footer-banner">
+				<img src="Banner\Footer\providers7.png" class="footer-banner">
+				<img src="Banner\Footer\providers8.png" class="footer-banner">
+				<div class="top-name2">LICENSES</div>
+				<img src="Banner\Footer\licenses1.png" class="footer-banner">
+				<img src="Banner\Footer\licenses2.png" class="footer-banner">
+				<img src="Banner\Footer\licenses3.png" class="footer-banner">
+				<img src="Banner\Footer\licenses4.png" class="footer-banner">
+				<img src="Banner\Footer\licenses5.png" class="footer-banner">
+				<img src="Banner\Footer\licenses6.png" class="footer-banner">
+			</div>
+		</div>
+
+	</div>
+
+		<div class="bottom-finish">
+			<div class="bottom-text">
+				<a href="about.html">About Us</a>
+				<div class="text-divider">|</div>
+				<a href="contac.html">Contacs Us</a>
+				<div class="text-divider">|</div>
+				<a href="join.html">Join Us Now</a>
+			</div>
+				<div class="copyright">Copyright VR46 © 2024. All rights reserved.</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Footer container -->
+
+</body>
+</html>

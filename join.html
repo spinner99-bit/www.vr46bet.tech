@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>VR46 Gaming</title>
+	<link rel="shortcut icon" href="Banner\Icon\logo.png">
+
+	<style>
+		#outer {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+
+	<style>
+		#outer0 {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+</head>
+<body onload="startTime()">
+
+<div id="outer0">
+	<div id="inner0"></div>
+
+		<header>
+
+						<div class="header-logo">
+							<img src="Banner\iconspin.png" class="iconspin">
+							<img src="Banner\logo2.png" class="logo">
+						</div>
+
+
+					<div class="header-cont">
+							<input type="text" name="Username" placeholder="Username" class="box" required>
+							<input type="password" name="Password" placeholder="Password" class="box" required>
+							<button class="login"><a href="join.html" type="button">LOGIN</a></button>
+							<button class="join"><a href="join.html">JOIN</a></button>
+
+						<div class="header-down">
+							<div>
+								Forgot&nbsp;<a href="contac.html">username</a>&nbsp;or&nbsp;<a href="contac.html">password</a>?
+							</div>
+
+							<div id="time" class="time"></div>
+							<p>(GMT+8)</p>
+
+						</div>
+
+					</div>
+
+				</div>
+		</header>
+</div>
+
+		<script>
+		function startTime() {
+		  const today = new Date();
+		  let mo = today.getMonth() + 1;
+		  let de = today.getDate();
+		  let y = today.getFullYear();
+		  let h = today.getHours();
+		  let m = today.getMinutes();
+		  let s = today.getSeconds();
+		  m = checkTime(m);
+		  s = checkTime(s);
+		  mo = checkTime(mo);
+		  de = checkTime(de);
+		  h = checkTime(h);
+		  
+		  
+		  document.getElementById('time').innerHTML =  y + "-" + mo + "-" + de + " " +  h + ":" + m + ":" + s;
+		  setTimeout(startTime, 1000);
+		}
+
+		function checkTime(i) {
+		  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		  return i;
+		}
+	</script>
+
+
+	<!-- Top Bar Content -->
+
+	<nav class="navbar">
+		<div class="navdiv">
+			<ul>
+
+				<li class="page-nav">
+					<a href="index.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\home.png"></div>
+								<div class="wor-nav">HOME</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\slot.png"></div>
+								<div class="wor-nav">SLOTS GAME</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s1.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s2.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s3.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s4.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s5.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s6.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\live.png"></div>
+								<div class="wor-nav">LIVE CASINO</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l1.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l2.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l3.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l5.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l6.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l7.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\sport.png"></div>
+								<div class="wor-nav">SPORTS</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Sport\maxbet.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="promotion.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\promotion.png"></div>
+								<div class="wor-nav">PROMOTIONS</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="about.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\about.png"></div>
+								<div class="wor-nav">ABOUT US</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="contac.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\contac.png"></div>
+								<div class="wor-nav">CONTACS US</div>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<!-- End Top Bar Content -->
+
+<div id="outer">
+	<div id="inner"></div>
+
+	<div class="register">
+		<form method="post" action="" class="form" onsubmit=" return sender()">
+
+			<h4>Registration New Members</h4>
+
+			<label>Username *</label>
+			<input type="text" name="username" placeholder="Username" id="username" required>
+
+			<label>Kata Laluan *</label>
+			<input type="password" name="password" placeholder="Password" id="password" required>
+
+			<br>
+
+			<label>Nama Penuh *</label>
+			<input type="text" name="fullname" placeholder="Full Name" id="fullname" required>
+
+			<label>Sahkan Kata Laluan *</label>
+			<input type="password" name="password2" placeholder=" Comfirm Password" id="password2" required>
+
+			<br>
+
+			<label>Nombor Telefon *</label>
+			<input type="number" name="number" placeholder="Mobile Number (601123524373)" id="number" required>
+
+			<label>Jenis Bank *</label>
+			<select name="bank" data-placeholder="Select Your Choice" id="bank" required>
+       			<option value="Select Your Choice">Select Your Choice</option>
+       					<option value="MAYBANK">MAYBANK</option>
+       					<option value="CIMB BANK">CIMB BANK</option>
+       					<option value="PUBLIC BANK">PUBLIC BANK</option>
+       					<option value="HONG LEONG BANK">HONG LEONG BANK</option>
+       					<option value="RHB BANK">RHB BANK</option>
+       					<option value="BANK SIMPANAN NASIONAL">BANK SIMPANAN NASIONAL</option>
+       					<option value="TOUCH N GO">TOUCH N GO</option>
+       					<option value="AMBANK">AMBANK</option>
+       					<option value="AGROBANK">AGROBANK</option>
+       					<option value="BANK ISLAM">BANK ISLAM</option>
+       					<option value="BANK MUAMALAT">BANK MUAMALAT</option>
+       					<option value="RAKYAT MALAYSIA">RAKYAT MALAYSIA</option>
+       					<option value="AFFIN BANK">AFFIN BANK</option>
+       					<option value="ALLIANCE BANK">ALLIANCE BANK</option>
+       					<option value="OCBC BANK">OCBC BANK</option>
+       					<option value="HSBC BANK">HSBC BANK</option>
+						<option value="UNITED OVERSEAS BANK">UNITED OVERSEAS BANK</option>
+       					<option value="CITIBANK">CITIBANK</option>
+       					<option value="BIGPAY MALAYSIA">BIGPAY MALAYSIA</option>
+       		</select>
+
+       		<br>
+
+       		<label>Akaun Nombor *</label>
+			<input type="number" name="account" placeholder="Account Number" id="account" required>
+
+			<label>Game Di Main *</label>
+			<select name="product" data-placeholder="Select Your Choice" id="product" required>
+       			<option value="Select Your Choice">Select Your Choice</option>
+       					<option value="918KISS">918KISS</option>
+       					<option value="MEGA888">MEGA888</option>
+       					<option value="PUSSY88">PUSSY88</option>
+       					<option value="JOKER123">JOKER123</option>
+       					<option value="LIVE22">LIVE22</option>
+       					<option value="GREATWALL">GREATWALL</option>
+       					<option value="NEWTOWN">NEWTOWN</option>
+       					<option value="LPE88">LPE88</option>
+       		</select>
+
+       		<div class="div-bjoin">
+
+       			<div class="done-register">
+
+       				<div class="success" id="success">
+
+       					<div class="register-style">
+
+	       					<img src="Banner\Icon\success.png">
+
+	       					<div class="wor-join-cover">
+								<div class="wor-join">You have successfully registered at VR46</div>
+								<div class="wor-join">Please check your whatsapp messages or Login</div>
+							</div>
+
+								<div class="done-reg-button">
+									<button><a href="">Login Now</a></button>
+									<button class="reg-bt-2"><a href="contac.html">Customer Service</a></button>
+								</div>
+
+						</div>
+
+					</div>
+
+
+					<div class="danger" id="danger">
+
+						<div class="register-style">
+
+							<img src="Banner\Icon\error.png">
+							<div class="wor-join">Feilds can't be Empty ! Please try again or contacs our customer service.</div>
+
+							<div class="done-reg-button">
+								<button><a href="join.html">Try Again</a></button>
+								<button class="reg-bt-2"><a href="contac.html">Customer Service</a></button>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<button type="submit" onclick="message()" id="submit">Submit</button>
+
+			</div>
+
+		</form>
+	</div>
+</div>
+
+	<script src="script.js"></script>
+
+<!-- Footer container -->
+
+<div class="footer-bg">
+
+	<div id="verticle-line" class="footer-line"></div>
+
+	<div id="outer10">
+		<div id="inner10"></div>
+
+	<div class="row1">
+
+		<div class="footer">
+			<div class="process">
+				<div class="top-name">FAST SETTLEMENT</div>
+				<div class="container-text">DEPOSIT</div>
+				<div class="container-text2">Average Time : 1 mins</div>
+				<div class="process-bar">
+					<div class="processd1 processd2"></div>
+				</div>
+				<div class="container-text">WITHDRAW</div>
+				<div class="container-text2">Average Time : 2 mins</div>
+				<div class="process-bar">
+					<div class="processw1 processw2"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-divider">
+				<div class="top-name2">PROVIDERS</div>
+				<img src="Banner\Footer\providers1.png" class="footer-banner">
+				<img src="Banner\Footer\providers2.png" class="footer-banner">
+				<img src="Banner\Footer\providers3.png" class="footer-banner">
+				<img src="Banner\Footer\providers4.png" class="footer-banner">
+				<img src="Banner\Footer\providers5.png" class="footer-banner">
+				<img src="Banner\Footer\providers6.png" class="footer-banner">
+				<img src="Banner\Footer\providers7.png" class="footer-banner">
+				<img src="Banner\Footer\providers8.png" class="footer-banner">
+				<div class="top-name2">LICENSES</div>
+				<img src="Banner\Footer\licenses1.png" class="footer-banner">
+				<img src="Banner\Footer\licenses2.png" class="footer-banner">
+				<img src="Banner\Footer\licenses3.png" class="footer-banner">
+				<img src="Banner\Footer\licenses4.png" class="footer-banner">
+				<img src="Banner\Footer\licenses5.png" class="footer-banner">
+				<img src="Banner\Footer\licenses6.png" class="footer-banner">
+			</div>
+		</div>
+
+	</div>
+
+		<div class="bottom-finish">
+			<div class="bottom-text">
+				<a href="about.html">About Us</a>
+				<div class="text-divider">|</div>
+				<a href="contac.html">Contacs Us</a>
+				<div class="text-divider">|</div>
+				<a href="join.html">Join Us Now</a>
+			</div>
+				<div class="copyright">Copyright VR46 © 2024. All rights reserved.</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Footer container -->
+
+</body>
+</html>

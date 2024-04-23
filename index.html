@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-train-station.min.css">
+
+	<title>VR46 Gaming</title>
+	<link rel="shortcut icon" href="Banner\Icon\logo.png">
+	
+	<style>
+		#outer0 {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+
+	<style>
+		#outer {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+
+	<style>
+		#outer2 {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+	</style>
+
+	<style>
+		#outer3 {
+			display: grid;
+			justify-content: center;
+			text-align: center;
+			overflow: hidden;
+		}
+	</style>
+
+	<style type="text/css">
+
+		#slider {
+			overflow: hidden;
+	}
+
+		#slider figure {
+			position: relative;
+			width: 500%;
+			margin: 0;
+			left: 0;
+			animation: 17s slider infinite;
+		}
+
+		#slider figure img {
+			float: left;
+			width: 20%;
+		}
+
+		@keyframes slider {
+			0% {
+				left: 0;
+			}
+			20% {
+				left: 0;
+			}
+			25% {
+				left: -100%;
+			}
+			45% {
+				left: -100%;
+			}
+			50% {
+				left: -200%;
+			}
+			70% {
+				left: -200%;
+			}
+			75%{
+				left: -300%;
+			}
+			95% {
+				left: -300%;
+			}
+			100% {
+				left: -400%;
+			}
+		}
+
+	</style>
+
+</head>
+
+<body onload="startTime()">
+
+<div id="outer0">
+	<div id="inner0"></div>
+
+		<header>
+
+				<div class="header-cover">
+
+						<div class="header-logo">
+							<img src="Banner\iconspin.png" class="iconspin">
+							<img src="Banner\logo2.png" class="logo">
+						</div>
+
+						<div class="header-cont">
+								<input type="text" name="Username" placeholder="Username" class="box" required>
+								<input type="password" name="Password" placeholder="Password" class="box" required>
+								<button class="login"><a href="index.html" type="button">LOGIN</a></button>
+								<button class="join"><a href="join.html">JOIN</a></button>
+
+							<div class="header-down">
+								<div>
+									Forgot&nbsp;<a href="contac.html">username</a>&nbsp;or&nbsp;<a href="contac.html">password</a>?
+								</div>
+
+								<div id="time" class="time"></div>
+								<p>(GMT+8)</p>
+
+							</div>
+
+						</div>
+
+				</div>
+
+		</header>
+</div>
+
+		<script>
+		function startTime() {
+		  const today = new Date();
+		  let mo = today.getMonth() + 1;
+		  let de = today.getDate();
+		  let y = today.getFullYear();
+		  let h = today.getHours();
+		  let m = today.getMinutes();
+		  let s = today.getSeconds();
+		  m = checkTime(m);
+		  s = checkTime(s);
+		  mo = checkTime(mo);
+		  de = checkTime(de);
+		  h = checkTime(h);
+		  
+		  
+		  document.getElementById('time').innerHTML =  y + "-" + mo + "-" + de + " " +  h + ":" + m + ":" + s;
+		  setTimeout(startTime, 1000);
+		}
+
+		function checkTime(i) {
+		  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		  return i;
+		}
+	</script>
+
+	<!-- Top Bar Content -->
+
+	<nav class="navbar">
+		<div class="navdiv">
+			<ul>
+
+				<li class="page-nav">
+					<a href="index.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\home.png"></div>
+								<div class="wor-nav">HOME</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\slot.png"></div>
+								<div class="wor-nav">SLOTS GAME</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s1.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s2.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s3.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s4.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s5.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Slot\s6.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\live.png"></div>
+								<div class="wor-nav">LIVE CASINO</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l1.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l2.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l3.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l5.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l6.png"></div>
+											</li>
+										</div>
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Live\l7.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="#">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\sport.png"></div>
+								<div class="wor-nav">SPORTS</div>
+						</div>
+					</a>
+
+					<div class="control-sub">
+						<ul id="submenu">
+
+							<div class="menu-product">
+
+										<div class="product-sub">
+											<li>
+												<a href="join.html">
+												<div class="div-nav">
+												<div class="nav-icon"> <img src="Banner\Product\Sport\maxbet.png"></div>
+											</li>
+										</div>
+
+							</div>
+
+						</ul>
+					</div>
+
+				</li>
+
+				<li class="page-nav">
+					<a href="promotion.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\promotion.png"></div>
+								<div class="wor-nav">PROMOTIONS</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="about.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\about.png"></div>
+								<div class="wor-nav">ABOUT US</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="page-nav">
+					<a href="contac.html">
+						<div class="div-nav">
+							<div class="nav-icon"> <img src="Banner\Icon\contac.png"></div>
+								<div class="wor-nav">CONTACS US</div>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<!-- End Top Bar Content -->
+
+
+<!-- Slideshow container -->
+
+			<div id="slider">
+					<figure>
+						<img src="Banner\Home\s1.jpg">
+						<img src="Banner\Home\s2.jpg">
+						<img src="Banner\Home\s3.jpg">
+						<img src="Banner\Home\s4.jpg">
+						<img src="Banner\Home\s1.jpg">
+					</figure>
+			</div>
+
+<!-- End Slideshow container -->
+
+	<div class="run-stop">
+		<img src="Banner\Icon\run.png">
+	<marquee scrollamount="5" direction="left">
+	<h1>Kepada Pelanggan Kami Semua,hanya (WWW.VR46BET.TECH) adalah laman web rasmi VR46. Untuk Keterangan Lanjut Boleh Hubungi Kami Di (CONTACS US) . Pembayaran Hadiah Jackpot Hanya untuk Deposit RM30.00 Dan Keatas.Permainan Slot Yang Tidak Normal Seperti Simpan Free Game Juga Tidak Dibayar!!!Goodluck Enjoy.</h1>
+	</marquee>
+	</div>
+
+<!-- Odometer container -->
+
+	<div id="outer0">
+		<div id="inner0"></div>
+
+		<div class="jackpot">
+
+			<div class="odocover-img">
+				<img src="Banner\Gif\3.gif">
+			</div>
+
+			<div class="odometer-cover">
+				<div class="odometer" id="odometer">Updating</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+
+	<script>
+
+		let value = 185493264.55;
+		setInterval( () => {
+			value +=1793712.97;
+			odometer.innerHTML = value;
+		},3000)
+
+	</script>
+
+<!-- End Odometer container -->
+
+<div id="outer0">
+	<div id="inner0"></div>
+	
+	<div class="game-cover">
+
+			<div class="left-game">
+				<img src="Banner\Home\mspuiyi2.png">
+			</div>
+
+			<div class="right-game">
+
+					<div class="game-row1">
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\1.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\2.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\3.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\4.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\5.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+					</div>
+
+					<div class="game-row1">
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\6.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\7.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\8.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\9.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\10.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+					</div>
+
+					<div class="game-row1">
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\11.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\12.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\13.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\14.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\15.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+					</div>
+
+					<div class="game-row1">
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\16.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\17.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\18.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\19.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+
+								<div class="all-game-cover">
+										<div class="game-per">
+														<img src="Banner\Game\20.png">
+												<div class="game-button">
+														<button><a href="">Play Now</a></button>
+												</div>
+										</div>
+								</div>
+					</div>
+
+			</div>
+
+	</div>
+
+</div>
+
+
+
+<div id="outer0">
+	<div id="inner0"></div>
+
+	<div class="all-rank-mix">
+
+			<div class="full-rank-cover">
+
+				<div class="rank-type-wor">RANKING TOP DEPOSIT</div>
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\boy.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-dp">
+										<div class="ranking-name">Ya***27</div>
+										<div class="ranking-status deposit">Had Deposited</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+									<div class="ranking-amount">MYR 52,450.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\boy.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-dp">
+										<div class="ranking-name">So****27</div>
+										<div class="ranking-status deposit">Had Deposited</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+									<div class="ranking-amount">MYR 49,700.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\boy.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-dp">
+										<div class="ranking-name">Fi******77</div>
+										<div class="ranking-status deposit">Had Deposited</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+									<div class="ranking-amount">MYR 48,380.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\boy.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-dp">
+										<div class="ranking-name">Ta******55</div>
+										<div class="ranking-status deposit">Had Deposited</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+									<div class="ranking-amount">MYR 45,300.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\girls.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-dp">
+										<div class="ranking-name">Sa*****52</div>
+										<div class="ranking-status deposit">Had Deposited</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+									<div class="ranking-amount">MYR 42,550.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\girls.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-dp">
+										<div class="ranking-name">Li****24</div>
+										<div class="ranking-status deposit">Had Deposited</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+									<div class="ranking-amount">MYR 39,450.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+			</div>
+
+							<!-- Rank 2 Start -->
+
+			<div class="full-rank-cover rank-wd">
+
+				<div class="rank-type-wor">RANKING TOP WITHDRAW</div>
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\boy.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-wd">
+										<div class="ranking-name">Ya***27</div>
+										<div class="ranking-status withdraw">Had Won</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+									<div class="ranking-amount wd-amount">MYR 98,800.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\girls.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-wd">
+										<div class="ranking-name">Sa*****52</div>
+										<div class="ranking-status withdraw">Had Won</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+										<div class="ranking-amount wd-amount">MYR 73,500.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\boy.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-wd">
+										<div class="ranking-name">Na*****42</div>
+										<div class="ranking-status withdraw">Had Won</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+										<div class="ranking-amount wd-amount">MYR 69,850.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\boy.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-wd">
+										<div class="ranking-name">So****27</div>
+										<div class="ranking-status withdraw">Had Won</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+										<div class="ranking-amount wd-amount">MYR 64,230.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\boy.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-wd">
+										<div class="ranking-name">Za*****11</div>
+										<div class="ranking-status withdraw">Had Won</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+										<div class="ranking-amount wd-amount">MYR 54,900.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+						<div class="ranking-cover">
+
+							<div class="ranking-left">
+
+									<div class="ranking-1">
+										<img src="Banner\Icon\girls.png" class="ranking-user">
+									</div>
+
+									<div class="ranking-2 rank-wd">
+										<div class="ranking-name">Li****24</div>
+										<div class="ranking-status withdraw">Had Won</div>
+									</div>
+
+							</div>
+
+								<div class="ranking-3">
+										<div class="ranking-amount wd-amount">MYR 49,500.00</div>
+								</div>
+
+						</div>
+
+												<!-- 1 Rank -->
+
+			</div>
+
+	</div>
+
+</div>
+
+
+<!-- Footer container -->
+
+<div class="footer-bg">
+
+	<div id="verticle-line" class="footer-line"></div>
+
+	<div id="outer10">
+		<div id="inner10"></div>
+
+	<div class="row1">
+
+		<div class="footer">
+			<div class="process">
+				<div class="top-name">FAST SETTLEMENT</div>
+				<div class="container-text">DEPOSIT</div>
+				<div class="container-text2">Average Time : 1 mins</div>
+				<div class="process-bar">
+					<div class="processd1 processd2"></div>
+				</div>
+				<div class="container-text">WITHDRAW</div>
+				<div class="container-text2">Average Time : 2 mins</div>
+				<div class="process-bar">
+					<div class="processw1 processw2"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-divider">
+				<div class="top-name2">PROVIDERS</div>
+				<img src="Banner\Footer\providers1.png" class="footer-banner">
+				<img src="Banner\Footer\providers2.png" class="footer-banner">
+				<img src="Banner\Footer\providers3.png" class="footer-banner">
+				<img src="Banner\Footer\providers4.png" class="footer-banner">
+				<img src="Banner\Footer\providers5.png" class="footer-banner">
+				<img src="Banner\Footer\providers6.png" class="footer-banner">
+				<img src="Banner\Footer\providers7.png" class="footer-banner">
+				<img src="Banner\Footer\providers8.png" class="footer-banner">
+				<div class="top-name2">LICENSES</div>
+				<img src="Banner\Footer\licenses1.png" class="footer-banner">
+				<img src="Banner\Footer\licenses2.png" class="footer-banner">
+				<img src="Banner\Footer\licenses3.png" class="footer-banner">
+				<img src="Banner\Footer\licenses4.png" class="footer-banner">
+				<img src="Banner\Footer\licenses5.png" class="footer-banner">
+				<img src="Banner\Footer\licenses6.png" class="footer-banner">
+			</div>
+		</div>
+
+	</div>
+
+		<div class="bottom-finish">
+			<div class="bottom-text">
+				<a href="about.html">About Us</a>
+				<div class="text-divider">|</div>
+				<a href="contac.html">Contacs Us</a>
+				<div class="text-divider">|</div>
+				<a href="join.html">Join Us Now</a>
+			</div>
+				<div class="copyright">Copyright VR46 © 2024. All rights reserved.</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Footer container -->
+
+<script>
+	let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+</html>
