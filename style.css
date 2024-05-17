@@ -356,12 +356,10 @@ li:hover ul#submenu{
 	padding-top: 10px;
 }
 .container-promotion p{
-	font-size: 12px;
+	font-size: 15px;
 	color: black;
 	text-align: center;
 	padding-top: 25px;
-	margin-left: 3px;
-	margin-right: 3px;
 }
 .container-promotion button{
 	font-size: 14px;
@@ -381,18 +379,10 @@ li:hover ul#submenu{
 	text-decoration: none;
 }
 
-
-
 .banner img{
 	margin-left: 10px;
 }
-.contac-us h2{
-	margin-top: 40px;
-	margin-bottom: 20px;
-	font-size: 35px;
-	font-weight: 900;
-	color: #fbbc04;
-}
+
 .run-stop{
 	display: flex;
 	background-color: #fbbc04;
@@ -707,4 +697,98 @@ li:hover ul#submenu{
 }
 .wd-amount{
 	margin-left: 90px;
+}
+
+.contac-link-row1{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.per-contac-cover{
+	background-size: cover;
+	width: 250px;
+	height: 230px;
+	border-radius: 30px;
+	align-content: center;
+}
+
+.per-contac-cover a{
+	text-decoration: none;
+	color: white;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.contac-whatsapp-cover{
+	background-color: #32d851;
+}
+
+.contac-telegram-cover{
+	margin-left: 40px;
+	background-color: #29aaec;
+}
+
+.contac-wechat-cover{
+	margin-left: 40px;
+	background-color: #2ec100;
+}
+
+.per-contac-cover img{
+	height: 130px;
+	width: auto;
+}
+
+.contac-row1-word{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contac-row2-all-cover{
+	margin-top: 10px;
+}
+
+.contac-row2-per{
+	background-color: transparent;
+	width: 830px;
+	height: 66px;
+	border-radius: 30px;
+	border: 3px solid #fbbc04;
+	margin-top: 20px;
+}
+
+.contac-row2-per a{
+	text-decoration: none;
+}
+
+.contac-row2-container-cover{
+	display: flex;
+	justify-content: left;
+}
+
+.contac-row2-left{
+	margin-left: 2px;
+	background-size: cover;
+}
+
+.contac-row2-left img{
+	width: 60px;
+	height: auto;
+}
+
+.contac-row2-right{
+	background-size: cover;
+	width: 100%;
+	align-content: center;
+}
+
+.contac-row2-wordi{
+	text-align: center;
+	font-weight: 900;
+	font-size: 20px;
+	color: white;
+}
+
+.contac-row2-per:hover{
+	background-color: #fbbc04;
 }
